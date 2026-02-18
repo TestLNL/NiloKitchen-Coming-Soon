@@ -16,13 +16,15 @@ body::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: 
+ background:
   linear-gradient(
-    rgba(244, 241, 234, 0.85),
-    rgba(244, 241, 234, 0.85)
+    rgba(244, 241, 234, 0.88),
+    rgba(244, 241, 234, 0.88)
   ),
-  url("background.jpg") center top/cover no-repeat;
+  url("background.jpg") center/cover no-repeat;
 
+filter: blur(3px);
+z-index: -1;
 
 
 .container {
