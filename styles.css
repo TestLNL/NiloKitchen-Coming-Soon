@@ -12,17 +12,18 @@ body::before {
   content: "";
   position: absolute;
   inset: 0;
-background:
-  linear-gradient(
-    rgba(30, 60, 50, 0.35),
-    rgba(30, 60, 50, 0.35)
-  ),
-  url("background.jpg") center 50%/cover no-repeat;
+  background:
+    linear-gradient(
+      rgba(30, 60, 50, 0.35),
+      rgba(30, 60, 50, 0.35)
+    ),
+    url("background.jpg") center 50%/cover no-repeat;
+  filter: blur(1.5px);
+  z-index: -2;
+}
 
-filter: blur(1.5px);
-z-index: -1;
-
-  body::after {
+/* Vignette */
+body::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -37,10 +38,11 @@ z-index: -1;
 .container {
   position: absolute;
   left: 50%;
-  top: 52%;              /* <-- hiermee schuif je naar de kaars */
+  top: 58%;
   transform: translate(-50%, -50%);
   max-width: 600px;
   padding: 16px 18px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.35);
 }
 
 h1 {
@@ -53,7 +55,7 @@ h1 {
 .line {
   width: 80px;
   height: 3px;
-  background: #2f5d50;
+  background: rgba(244, 241, 234, 0.85);
   margin: 20px auto;
 }
 
