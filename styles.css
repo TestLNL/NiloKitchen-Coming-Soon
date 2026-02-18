@@ -17,7 +17,7 @@ body::before {
       rgba(30, 60, 50, 0.35),
       rgba(30, 60, 50, 0.35)
     ),
-    url("background.jpg") center 40%/cover no-repeat;
+    url("background.jpg") center 37%/cover no-repeat;
   filter: blur(1.5px);
   z-index: -2;
 }
