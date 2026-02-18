@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #2f5d50;
+
+  background: 
+    linear-gradient(
+      rgba(47, 93, 80, 0.12),
+      rgba(47, 93, 80, 0.12)
+    ),
+    linear-gradient(
+      135deg,
+      #f4f1ea 0%,
+      #e6efe9 100%
+    );
+}
+
+.container {
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.line {
+  width: 80px;
+  height: 3px;
+  background: #2f5d50;
+  margin: 20px auto;
+}
+
+p {
+  font-size: 18px;
+  color: #4a4a4a;
+}
