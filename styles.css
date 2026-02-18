@@ -21,7 +21,7 @@ background:
     rgba(30, 60, 50, 0.35),
     rgba(30, 60, 50, 0.35)
   ),
-  url("background.jpg") center 30%/cover no-repeat;
+  url("background.jpg") center 40%/cover no-repeat;
 
 filter: blur(1.5px);
 z-index: -1;
@@ -40,7 +40,7 @@ z-index: -1;
 
 .container {
   max-width: 600px;
-  transform: translateY(60px);
+  margin-top: 8vh;
 }
 
 h1 {
