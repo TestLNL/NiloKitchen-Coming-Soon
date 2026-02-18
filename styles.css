@@ -37,7 +37,7 @@ z-index: -1;
 .container {
   position: absolute;
   left: 50%;
-  top: 58%;              /* <-- hiermee schuif je naar de kaars */
+  top: 62%;              /* <-- hiermee schuif je naar de kaars */
   transform: translate(-50%, -50%);
   max-width: 600px;
   padding: 16px 18px;
