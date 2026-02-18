@@ -17,49 +17,51 @@ body::before {
       rgba(30, 60, 50, 0.35),
       rgba(30, 60, 50, 0.35)
     ),
-    url("background.jpg") center 35%/cover no-repeat;
-  filter: blur(1.5px);
+    url("background.jpg") center 46%/cover no-repeat;
+  filter: blur(1.2px);
   z-index: -2;
 }
 
-/* Vignette */
+/* Subtle vignette */
 body::after {
   content: "";
   position: absolute;
   inset: 0;
   background: radial-gradient(
     circle at center,
-    rgba(0,0,0,0) 40%,
-    rgba(0,0,0,0.25) 100%
+    rgba(0,0,0,0) 45%,
+    rgba(0,0,0,0.28) 100%
   );
   z-index: -1;
 }
 
+/* TEXT EXACT IN KAARS */
 .container {
   position: absolute;
   left: 50%;
-  top: 57%;
+  top: 61%; /* PERFECT vertical alignment for your image */
   transform: translate(-50%, -50%);
   max-width: 600px;
-  padding: 16px 18px;
+  text-align: center;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.35);
 }
-
 
 h1 {
   font-size: 44px;
   letter-spacing: 2px;
   font-weight: 500;
-  color: #f4f1ea;
+  margin-bottom: 15px;
 }
 
 .line {
-  width: 80px;
-  height: 3px;
-  background: rgba(244, 241, 234, 0.85);
-  margin: 20px auto;
+  width: 60px;
+  height: 2px;
+  background: rgba(244, 241, 234, 0.8);
+  margin: 15px auto;
 }
 
 p {
   font-size: 18px;
   color: #e8efe9;
+  margin: 8px 0;
 }
