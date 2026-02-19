@@ -1,29 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NILO Home Kitchen</title>
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Premium fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>NILO Home Kitchen — Coming Soon</title>
+    <meta
+      name="description"
+      content="NILO Home Kitchen in Brussel. Authentieke, verse Thaise lunchboxen aan huis geleverd. Coming soon."
+    />
 
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <main class="container">
-    <h1>NILO Home Kitchen</h1>
+    <!-- Premium fonts (safe + fast enough for a coming soon) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-    <div class="line"></div>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
 
-    <p class="subtitle">Authentic Thai lunchboxes &amp; catering in Brussels.</p>
+  <body>
+    <main class="hero" role="main">
+      <div class="hero__inner">
+        <header class="brand" aria-label="NILO Home Kitchen">
+          <div class="brand__mark" aria-hidden="true">NILO</div>
+          <div class="brand__name">
+            <span class="brand__title">Home Kitchen</span>
+            <span class="brand__subtitle">Brussel • Lunch delivery</span>
+          </div>
+        </header>
 
-    <div class="line small"></div>
+        <section class="card" aria-label="Coming soon">
+          <div class="rule rule--top" aria-hidden="true"></div>
 
-    <p class="status"><strong>Work in Progress</strong></p>
-    <p class="soon">Coming Soon</p>
-  </main>
-</body>
+          <h1 class="headline">Coming soon</h1>
+
+          <p class="lead">
+            Authentieke, huisgemaakte Thaise lunchboxen — vers bereid in kleine
+            batches en geleverd rond de middag.
+          </p>
+
+          <div class="facts" role="list" aria-label="Praktische info">
+            <div class="fact" role="listitem">
+              <span class="fact__label">Levering</span>
+              <span class="fact__value">11:45 – 12:45</span>
+            </div>
+            <div class="fact" role="listitem">
+              <span class="fact__label">Cut-off</span>
+              <span class="fact__value">10:30 (same-day lunch)</span>
+            </div>
+            <div class="fact" role="listitem">
+              <span class="fact__label">Dagcapaciteit</span>
+              <span class="fact__value">max. 25 porties</span>
+            </div>
+            <div class="fact" role="listitem">
+              <span class="fact__label">Leverzone</span>
+              <span class="fact__value">Jette • Ganshoren • Wemmel • Zellik</span>
+            </div>
+          </div>
+
+          <div class="cta">
+            <a class="btn" href="mailto:hello@nilokitchen.be?subject=NILO%20Coming%20Soon%20-%20Info">
+              Contacteer ons
+            </a>
+            <a class="btn btn--ghost" href="https://www.instagram.com/" target="_blank" rel="noopener">
+              Volg Instagram
+            </a>
+          </div>
+
+          <p class="fineprint">
+            Gratis levering vanaf <strong>€25</strong>, anders <strong>€2,99</strong>.
+            <span class="dot">•</span>
+            Voor grotere bestellingen: bevestiging mogelijk op aanvraag.
+          </p>
+
+          <div class="rule rule--bottom" aria-hidden="true"></div>
+        </section>
+
+        <footer class="footer">
+          <span>© <span id="y"></span> NILO Home Kitchen</span>
+          <span class="sep">—</span>
+          <span>www.nilokitchen.be</span>
+        </footer>
+      </div>
+    </main>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
